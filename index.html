@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+            JavaScript
+    
+    Это локальный язык, который выполняется на стороне клиента без перезагрузки.
+
+    Язык мощный, имеется большое количество различных библиотек.
+
+    2 способа подключения: 
+        1) прописывание внутри html файла;
+        2) подключение файла.
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Подключение css файла-->
+    <link href="CSS.css" rel="stylesheet" type="text/css" />
+
+    <!--Подключение js файла-->
+    <script type="text/javascript" src="JS.js"></script>
+
+    <title>Изучение JavaScript</title>
+  </head>
+
+  <body>
+    <p class="DenisText" id="text">Денис</p>
+
+    <!--Использование js не через файл-->
+    <script>
+      // Код.
+    </script>
+
+    <!--Обработка событий-->
+    <button onclick="changeColor('blue');">Синий</button>
+    <button onmouseover="changeColor('red');">Красный</button>
+    <br />
+    <br />
+    <br />
+
+    <!--Форма с полем ввода и кнопкой отправки-->
+    <form
+      name="myForm"
+      action=""
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      Имя: <input type="text" name="fname" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
